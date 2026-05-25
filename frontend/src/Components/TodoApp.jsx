@@ -3,8 +3,8 @@ import axios from 'axios'
 import './TodoApp.css'
 
 // 🔴 USING FULL URL - NO PROXY NEEDED!
-const API_URL = import.meta.env.VITE_API_URL; 
-//const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/todos'
+//const API_URL = import.meta.env.VITE_API_URL; 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/todos';
 //const API_URL = 'https://mern-todo-app2-backend.onrender.com/api/todos';
 
 
