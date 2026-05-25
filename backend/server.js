@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;  // ✅ Changed: Now uses env variable
 const allowedOrigins = [
   'http://localhost:3000',           // Local development
   'http://localhost:5173',           // Vite local
-  'https://mern-todo-app2.vercel.app/' // Production (replace later)
+  'https://mern-todo-app2.vercel.app' // Production (replace later)
 ];
 
 // Middleware
