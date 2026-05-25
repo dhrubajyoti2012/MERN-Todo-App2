@@ -7,28 +7,6 @@ const API_URL = import.meta.env.VITE_API_URL;
 //const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/todos'
 //const API_URL = 'https://mern-todo-app2-backend.onrender.com/api/todos';
 
-// At the top with other imports
-const API_URL = import.meta.env.VITE_API_URL;
-
-// Inside your component, before fetchTodos
-console.log('🔍 ENV CHECK:', {
-  viteUrl: import.meta.env.VITE_API_URL,
-  finalUrl: API_URL,
-  allEnv: import.meta.env
-});
-
-// In fetchTodos function
-const fetchTodos = async () => {
-  console.log('📡 CALLING BACKEND AT:', API_URL);
-  try {
-    const response = await axios.get(API_URL);
-    console.log('✅ SUCCESS:', response.data);
-    setTodos(response.data.data);
-  } catch (error) {
-    console.error('❌ ERROR:', error);
-  }
-};
-
 
 const TodoApp = () => {
   const [todos, setTodos] = useState([])
